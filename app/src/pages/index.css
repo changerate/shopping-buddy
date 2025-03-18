@@ -10,6 +10,7 @@ html, head, body, #root {
 
 
 body {
+  background-color: #FBF6EE;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -63,6 +64,8 @@ code {
   color: #CCFFC8;
 }
 
+
+
 /* HEADER BAR LINES */
 .header-budget-section > div, .header-items-section > div {
   border: 1px solid #E1E1E1;
@@ -79,6 +82,8 @@ code {
   background-color: #304D5E;
   border-radius: 18px 18px 0 0;
 }
+
+
 
 /* FOOTER ADVANCED */
 .footer {
@@ -114,4 +119,83 @@ code {
   height: 30px;
   background-color: white;
   border-radius: 100px;
+}
+
+
+
+/* ADD PRODUCT POPUP */
+.add-product-popup {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  padding: 20px;
+  background-color: #C8D9DA;
+  border-radius: 28px;
+}
+
+.add-product-popup > textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  width: 273px;
+  height: 111px;
+  resize: none; /* makes the area non resizable */
+  margin: 20px 0;
+}
+
+
+
+/* WHAT TO GET LIST */
+.what-to-get-list {
+  height: 180px;
+  font-size: 10pt;
+  margin: 15px 19px;
+}
+
+.what-to-get-list > h2 {
+  margin: 0;
+}
+
+
+
+/* UNPICKED PRODUCT */
+.unpicked-product {
+  display: flex;
+  background-color: #D9D9D9;
+  color: #332714;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.unpicked-product > p {
+  margin: 0;
+}
+
+.unpicked-product > div {
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 7px rgb(172, 172, 172);
+}
+
+.unpicked-product > div:hover { 
+  cursor: pointer;
+}
+
+
+
+/* RECOMMENDED LIST */
+.recommended-list {
+  height: 180px;
+}
+
+
+
+/* PICKED LIST */
+.picked-list {
+  height: 180px;
 }
